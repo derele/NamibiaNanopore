@@ -135,10 +135,12 @@ Grace <- subset_samples(PS, project%in%"Grace")
 GraceNem <- subset_taxa(Grace, phylum%in%"Nematoda")
 GraceNem <- subset_taxa(GraceNem, taxa_sums(GraceNem) > 1)
 
+png("figures/Grace_1st_heat.png")
 pheatmap(log10(otu_table(GraceNem)+1),
          labels_row=tax_table(GraceNem)[, "genus"],
          labels_col=sample_data(GraceNem)$sample_ID,
          display_numbers=TRUE)
+dev.off()
 
 tax_table(GraceNem)[, "species"]
 ## super nice!!
@@ -155,7 +157,7 @@ SusNem <- subset_taxa(Sus, phylum%in%"Nematoda")
 SusNem <- subset_taxa(SusNem, taxa_sums(SusNem) > 1)
 
 
-png("figures/Grace_1st_heat.png")
+png("figures/Susana_1st_heat.png")
 pheatmap(log10(otu_table(SusNem)+1),
          labels_row=tax_table(SusNem)[, "genus"],
          labels_col=sample_data(SusNem)$sample_ID,

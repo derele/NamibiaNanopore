@@ -6,8 +6,8 @@ Marly, helping her to implement similar analyses for other MinIon data
 but also might later - in less detail - appear in methods parts.
 
 Project specific sections are: 
-- [Grace](##Grace's-project)
-
+- [Grace](#Grace's-project)
+- [Susana](#Grace's-project)
 
 ## Bioinformatic analysis and taxonomic annotation
 
@@ -78,3 +78,9 @@ read it in the script
 
 ![Log10 +1 transformed counts for
 nematodes](https://github.com/derele/NamibiaNanopore/blob/main/figures/Grace_1st_heat.png)
+
+# Susana's-project
+## detection of parasites in curede fecal samples of multiple species
+
+![Log10 +1 transformed counts for
+nematodes](https://github.com/derele/NamibiaNanopore/blob/main/figures/Susana_1st_heat.png)
