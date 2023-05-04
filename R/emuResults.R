@@ -154,10 +154,13 @@ Sus <- subset_samples(PS, project%in%"SuzanaSuares")
 SusNem <- subset_taxa(Sus, phylum%in%"Nematoda")
 SusNem <- subset_taxa(SusNem, taxa_sums(SusNem) > 1)
 
+
+pdf("figures/Grace_1st_heat.pdf")
 pheatmap(log10(otu_table(SusNem)+1),
          labels_row=tax_table(SusNem)[, "genus"],
          labels_col=sample_data(SusNem)$sample_ID,
          display_numbers=TRUE)
+dev.off()
 
 ## Yes, Petrovinema and Cylicocyclus again in Susana's Zebra. Also
 ## Haemonchus and (new here) Uncinaria in this Zebra. 

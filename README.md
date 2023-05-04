@@ -1,11 +1,16 @@
 # Analysis of Nanopore amplicon sequencing data generated during the GRK2046 field trip in Namibia
 
+You might want to skip the bioinformatics section, which is mostly for
+Marly, helping her to implement similar analyses for other MinIon data
+but also might later - in less detail - appear in methods parts.
+
+Project specific sections are: 
+[Grace](##Grace's project: detecting (small strongyle) nematodes in crude Zebra feces)
+
 
 ## Bioinformatic analysis and taxonomic annotation
-(You might want to skipt to the project specific result sections
-below; this section is mostly for Marly, helping her to implement
-similar analyses for other MinIon data but also might later - in less
-detail - appear in methods parts)
+
+
 
 We first ran guppy barcoder to assign the sequences to sample-specific
 barcodes.
@@ -60,5 +65,13 @@ different barcodes.
  emu combine-outputs --counts AbuVSALLEuk/ tax_id
  ```
 
+This data is now in the '/data' folder here in this repository
+(emu-combined-tax_id-counts.tsv)[https://github.com/derele/NamibiaNanopore/blob/main/data/emu-combined-tax_id-counts.tsv]. We
+read it in the script
+(emuResults.R)[https://github.com/derele/NamibiaNanopore/blob/main/R/emuResults.R].
 
 
+
+##Grace's project: detecting (small strongyle) nematodes in crude Zebra feces
+
+![link here](blah)
