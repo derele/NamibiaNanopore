@@ -77,4 +77,4 @@ read it in the script
 ## detecting (small strongyle) nematodes in crude Zebra feces
 
 ![Log10 +1 transformed counts for
-nematodes](https://github.com/derele/NamibiaNanopore/blob/main/figures/Grace_1st_heat.pdf)
+nematodes](https://github.com/derele/NamibiaNanopore/blob/main/figures/Grace_1st_heat.png)

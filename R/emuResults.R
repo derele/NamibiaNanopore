@@ -155,7 +155,7 @@ SusNem <- subset_taxa(Sus, phylum%in%"Nematoda")
 SusNem <- subset_taxa(SusNem, taxa_sums(SusNem) > 1)
 
 
-pdf("figures/Grace_1st_heat.pdf")
+png("figures/Grace_1st_heat.png")
 pheatmap(log10(otu_table(SusNem)+1),
          labels_row=tax_table(SusNem)[, "genus"],
          labels_col=sample_data(SusNem)$sample_ID,
