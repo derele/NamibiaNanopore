@@ -1,0 +1,8 @@
+
+
+
+Downloading a very comprehensive rRNA database for emu read
+classification from [RNACentral]("https://rnacentral.org/")
+
+Query: (RNA* AND so_rna_type_name:"RRNA" AND length:[500 TO 10000] AND
+rna_type:"rRNA") AND entry_type:"Sequence"

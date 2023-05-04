@@ -1,0 +1,10 @@
+emuTax <- read.delim("/SAN/MinKnowNamibia/ParasiteLongAmprDNA/results/Gcalled_for_now_rel-abundance.tsv")
+
+
+table(emuTax$phylum)[order(table(emuTax$phylum))]
+
+table(emuTax[emuTax$phylum%in%"Nematoda", "genus"])
+
+
+
+emuAbu <- read.delim("/SAN/MinKnowNamibia/ParasiteLongAmprDNA/results/Gcalled_for_now_rel-abundance-threshold-0.0001.tsv")

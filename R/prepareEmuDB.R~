@@ -1,0 +1,9 @@
+library(seqinr)
+
+## Downloading a very comprehensive rRNA database for
+## [emu]("https://gitlab.com/treangenlab/emu") read classification from
+## [RNACentral]("https://rnacentral.org/")'s ([ftp download "Active sequences are present in at least one expert database"][http://ftp.ebi.ac.uk/pub/databases/RNAcentral/current_release/sequences/rnacentral_active.fasta.gz)
+
+
+
+aRNA <- read.fasta("/SAN/db/emuDB/ALLRna/rnacentral_active.fasta.gz")
