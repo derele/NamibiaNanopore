@@ -1,11 +1,12 @@
-# Analysis of Nanopore amplicon sequencing data generated during the GRK2046 field trip in Namibia
+ Analysis of Nanopore amplicon sequencing data generated during the GRK2046 field trip in Namibia
+====================================================================================
 
 You might want to skip the bioinformatics section, which is mostly for
 Marly, helping her to implement similar analyses for other MinIon data
 but also might later - in less detail - appear in methods parts.
 
 Project specific sections are: 
-[Grace](##Grace's project: detecting (small strongyle) nematodes in crude Zebra feces)
+- [Grace](##Grace's-project)
 
 
 ## Bioinformatic analysis and taxonomic annotation
@@ -72,6 +73,8 @@ read it in the script
 
 
 
-##Grace's project: detecting (small strongyle) nematodes in crude Zebra feces
+# Grace's project
+## detecting (small strongyle) nematodes in crude Zebra feces
 
-![link here](blah)
+![Log10 +1 transformed counts for
+nematodes](https://github.com/derele/NamibiaNanopore/blob/main/figures/Grace_1st_heat.pdf)
