@@ -6,10 +6,10 @@ Marly, helping her to implement similar analyses for other MinIon data
 but also might later - in less detail - appear in methods parts.
 
 Project specific sections are: 
-- [Grace's project](##graces-project)
-- ["Düppel" project](##düppel-project)
-- [Susana's project](##susanas-project)
-- [Lilla's project](##lillas-project)
+- [Grace's project](#graces-project)
+- ["Düppel" project](#düppel-project)
+- [Susana's project](#susanas-project)
+- [Lilla's project](#lillas-project)
 
 ## Bioinformatic analysis and taxonomic annotation
 
@@ -32,10 +32,10 @@ for dir in $(ls -d barcode*);do cat $dir/*.fastq > $dir.fastq;
 done
 ```
 
-We then use [emu]("https://gitlab.com/treangenlab/emu") for read
+We then use [emu](https://gitlab.com/treangenlab/emu) for read
 classification. Classification of Eukaryote sequences needs a special
 database which we downloaded from
-[RNACentral]("https://rnacentral.org/") see
+[RNACentral](https://rnacentral.org/) see
 [R/prepareEmuDB.R](https://github.com/derele/NamibiaNanopore/blob/main/R/prepareEmuDB.R). The
 focus of this database is on comprehensiveness, in this case for all
 rRNA of Eukaryotes.
@@ -128,7 +128,7 @@ could use this in a first analysis of how flotation enriches for the
 PCR products of Nematodes.
 
 
-## Susana's-project
+## Susana's project
 ### detection of parasites in curede fecal samples of multiple species
 
 Susana Soares' colourful mix of species, allows us to ask a specific
@@ -150,5 +150,5 @@ the Ostrich (SS3OS) and Haemonchus in the Giraffe (SS6G) and in SS2Ro
 are interesting!?
 
 
-## Lilla's-project
+## Lilla's project
 ### detection of parasites in ticks and cheetah blood
