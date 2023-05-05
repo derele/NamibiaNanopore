@@ -73,10 +73,12 @@ Dupl
 NemDupl <- subset_taxa(Dupl, phylum%in%"Nematoda")
 ## 13 Nematodes 
 
+png("figures/DuplNem_1st_heat.png")
 pheatmap(log10(otu_table(NemDupl)+1),
          labels_row=tax_table(NemDupl)[, "genus"],
          labels_col=sample_data(NemDupl)$sample_ID,
          display_numbers=TRUE)
+dev.off()
 
 
 ApiDupl <- subset_taxa(Dupl, phylum%in%"Apicomplexa")
