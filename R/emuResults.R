@@ -95,7 +95,7 @@ subset_taxa(PS, phylum%in%"Nematoda")
 ## of a total of 35, looks like flotation worked to an extent in the
 ## Düppel samples.
 
-## Let's look at Lilla's cheetah blood and ticks. 
+## Let's look at Lilla's cheetah fecal samples and ticks.
 
 Lilla <- subset_samples(PS, project%in%"Lilla")
 ApiLilla  <- subset_taxa(Lilla, phylum%in%"Apicomplexa")
@@ -109,6 +109,21 @@ pheatmap(log10(otu_table(ApiLilla)+1),
 
 ### shit there's nothing!?
 ### In which semples are the interesting Apciomplexans
+
+
+ArthropLilla  <- subset_taxa(Lilla, phylum%in%"Arthropoda")
+
+ArthropLilla <- subset_taxa(ArthropLilla, taxa_sums(ArthropLilla) >1)
+
+png("figures/Lilla_Arthro_1st_heat.png")
+pheatmap(log10(otu_table(ArthropLilla)+1),
+         labels_row=tax_table(ArthropLilla)[, "genus"],
+         labels_col=sample_data(ArthropLilla)$sample_ID,
+         display_numbers=TRUE)
+dev.off()
+
+
+
 
 ApiPS  <- subset_taxa(PS, phylum%in%"Apicomplexa")
 ApiPS <- subset_samples(ApiPS, colSums(otu_table(ApiPS)) >1)
@@ -179,3 +194,15 @@ pheatmap(log10(otu_table(SusApi)+1),
          labels_col=sample_data(SusApi)$sample_ID,
          display_numbers=TRUE)
 ## Only uninteresting Gregarines!
+
+
+RO <- subset_samples(PS, project%in%c("rodeants", "rodent"))
+ROPa <- subset_taxa(RO, phylum%in%c("Nematoda", "Apicomplexa", "Platyhelminthes"))
+ROPa <- subset_taxa(ROPa, taxa_sums(ROPa) > 1)
+
+png("figures/Rodents_1st_heat.png")
+pheatmap(log10(otu_table(ROPa)+1),
+         labels_row=tax_table(ROPa)[, "genus"],
+         labels_col=sample_data(ROPa)$sample_ID,
+         display_numbers=TRUE)
+dev.off()

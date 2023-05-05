@@ -4,12 +4,12 @@
 You might want to skip the bioinformatics section, which is mostly for
 Marly, helping her to implement similar analyses for other MinIon data
 but also might later - in less detail - appear in methods parts.
-
 Project specific sections are: 
 - [Grace's project](#graces-project)
 - ["Düppel" project](#düppel-project)
 - [Susana's project](#susanas-project)
 - [Lilla's project](#lillas-project)
+- [Mouse project](
 
 ## Bioinformatic analysis and taxonomic annotation
 
@@ -111,8 +111,8 @@ likely from strongyles!!! We will see in alignemtns how many credible
 sequence variants these four nematode taxa correspond to. 
 
 
-## Düppel-project (Zaneta, Luis, Joshua and Philipp)
-### detection of nematodes in ungulate fecal flotations
+## Düppel-project
+###  (Zaneta, Luis, Joshua and Philipp) detection of nematodes in ungulate fecal flotations
 
 
 ![Log10 +1 transformed counts for
@@ -151,4 +151,29 @@ are interesting!?
 
 
 ## Lilla's project
-### detection of parasites in ticks and cheetah blood
+### detection of parasites in ticks and cheetah fecal samples
+
+So far only seqeunces annotated to the genus "Gregarina" are found
+those are database artefacts (or, less likely imo, PCR artefacts). We
+have to investigate some of thes sequences more thoroghly, but for
+now: we should establish more specific Apicomplexa primers to really
+amplify from blood or ticks.
+
+Regarding the latter, we found many tick related arthropod sequences.
+
+![Log10 +1 transformed counts for
+arthropods](https://github.com/derele/NamibiaNanopore/blob/main/figures/Lilla_Arthro_1st_heat.png)
+
+The species in the hyena feces are credible diet or sampling
+contamination. The other atrhopods are all tick sequences. As this
+should be from a single species it will be helpful to establish
+alignemnt clustering procedures to derive a consensus sequence (in
+this case one).
+
+## Mouse project
+### Fay's and Marly's mouse project
+
+![Log10 +1 transformed counts for
+parasites](https://github.com/derele/NamibiaNanopore/blob/main/figures/Rodents_1st_heat.png)
+
+
