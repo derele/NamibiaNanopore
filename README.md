@@ -171,7 +171,7 @@ alignment clustering procedures to derive a consensus sequence (in
 this case one).
 
 ## Mouse project
-### Fay's and Marly's mouse project
+### Fay's,  Marly's and Otto's mouse project
 
 ![Log10 +1 transformed counts for
 parasites](https://github.com/derele/NamibiaNanopore/blob/main/figures/Rodents_1st_heat.png)
