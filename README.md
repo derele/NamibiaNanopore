@@ -9,7 +9,7 @@ Project specific sections are:
 - ["Düppel" project](#düppel-project)
 - [Susana's project](#susanas-project)
 - [Lilla's project](#lillas-project)
-- [Mouse project](
+- [Mouse project](#mouse-project)
 
 ## Bioinformatic analysis and taxonomic annotation
 
@@ -177,12 +177,15 @@ this case one).
 parasites](https://github.com/derele/NamibiaNanopore/blob/main/figures/Rodents_1st_heat.png)
 
 This figure nicely shows the challenges that still persist: many
-detection seem to be split over different taxon annotations. Closely
-related taxa appear in the same sample, they are likely the same
-species! But non of the species available in the database... this is
-why we need to extract the sequences (spererately for each match to
-reference), and then align and re-cluster them without reference.
+detections seem to be split over different taxonomic annotations. This
+is likely asa we see closely related taxa appear in the same sample.
+The true species was not available in the database and the emu
+algorithm assigned them to different (similarly distant) taxa.
+Therefor we need to extract the sequences (spererately for matches to
+reference at certain taxonomic levels), and then align and re-cluster
+them without reference.
 
-For the mouse project this also shows nicely that we likely have a few
-different *Eimeria* species.
+For the mouse project this also shows nicely that we likely have a
+couple of different *Eimeria* species: four or five would be my guess
+based on the abundance patterns alone.
 
