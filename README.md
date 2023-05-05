@@ -129,10 +129,10 @@ PCR products of Nematodes.
 
 
 ## Susana's project
-### detection of parasites in curede fecal samples of multiple species
+### detection of parasites in crude fecal samples of multiple species
 
 Susana Soares' colourful mix of species, allows us to ask a specific
-questions related to other projects: 
+questions related to other projects:
 
 ![Log10 +1 transformed counts for
 nematodes](https://github.com/derele/NamibiaNanopore/blob/main/figures/Susana_1st_heat.png)
@@ -176,4 +176,13 @@ this case one).
 ![Log10 +1 transformed counts for
 parasites](https://github.com/derele/NamibiaNanopore/blob/main/figures/Rodents_1st_heat.png)
 
+This figure nicely shows the challenges that still persist: many
+detections seem to be split over different taxon annotations. Closely
+related taxa appear in the same sample, they are likely the same
+species! But non of the species available in the database... this is
+eactly why we need to extract the sequences (based on this reference),
+and then align and cluster them without refernce.
+
+For the project it also shows nicely that we likely have a few
+different Eimeria species.
 

@@ -198,11 +198,16 @@ pheatmap(log10(otu_table(SusApi)+1),
 
 RO <- subset_samples(PS, project%in%c("rodeants", "rodent"))
 ROPa <- subset_taxa(RO, phylum%in%c("Nematoda", "Apicomplexa", "Platyhelminthes"))
+
+ROPa <- subset_taxa(ROPa, phylum%in%c("Nematoda", "Apicomplexa", "Platyhelminthes"))
+ROPa <- subset_taxa(ROPa, !order%in%"Eugregarinorida")
+
 ROPa <- subset_taxa(ROPa, taxa_sums(ROPa) > 1)
 
-png("figures/Rodents_1st_heat.png")
+png("figures/Rodents_1st_heat.png", width=1200, height=600)
 pheatmap(log10(otu_table(ROPa)+1),
-         labels_row=tax_table(ROPa)[, "genus"],
+         labels_row=tax_table(ROPa)[, "species"],
          labels_col=sample_data(ROPa)$sample_ID,
-         display_numbers=TRUE)
+         display_numbers=FALSE)
 dev.off()
+
