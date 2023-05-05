@@ -24,7 +24,7 @@ EXP-PBC096 --num_barcoding_threads 8 --fastq_out -q 0
 This produces a fastq file for each barcode for each of three
 sequencing runs in the folder "Barcoded".
 
-We put barcoded sequences from the diffrent sequencing runs into one
+We put barcoded sequences from the different sequencing runs into one
 file (for each barcode):
 
 ```
@@ -75,26 +75,26 @@ to produce the analyses below.
 # Individual projects
 
 The following graphs give a first impression which database sequences
-were identified and their respective coutns in the processed
+were identified and their respective counts in the processed
 samples. The taxonomic identification (at this stage) is very
-dependent on the content of the database: worms like Haemonchus
-contortus, which have the complete rDNA region
+dependent on the content of the database: worms like *Haemonchus
+contortus*, which have the complete rDNA region
 (18S-ITS1-5.8S-ITS2-28S) we sequenced in the database will "attract" a
 lot of the annotations. This obviously doesn't mean that we detected
-Haemonchus in a Zebra, but rather that there's something most similar
-to it for the amplified region. 
+*Haemonchus* in a Zebra, but rather that there's something most
+similar to it for the amplified region.
 
 In the next stage of the analysis I'll extract all the sequences for
-the interesting taxa (by this first annotation) and produce alignemnts
+the interesting taxa (by this first annotation) and produce alignments
 and consensus sequences for them. Interested collaborators in their
 individual projects can then "manually" revise the taxonomic
-annotation for these sequences, or e.g. build phylogentic trees from
+annotation for these sequences, or e.g. build phylogenetic trees from
 them (e.g. for the diverse small strongyles).
 
 
-The following project sepecific plots ("heatmaps") show read numbers
+The following project specific plots ("heatmaps") show read numbers
 (log10(x+1) transformed) for samples (IDs you used when you
-"submitted" the samples for PCR and sequencing) in the colums and taxa
+"submitted" the samples for PCR and sequencing) in the columns and taxa
 in the rows.  
 
 
@@ -104,11 +104,11 @@ in the rows.
 ![Log10 +1 transformed counts for
 nematodes](https://github.com/derele/NamibiaNanopore/blob/main/figures/Grace_1st_heat.png)
 
-"Chabaudstrongylus ninhae" and "Haemonchus sp. 92619" are database
-artifacts (those are likely other Strongyles, but these species are
+*Chabaudstrongylus ninhae* and *Haemonchus sp. 92619* are database
+artifacts (those are likely other strongyles, but these species are
 not covered well enough in the database) but all these sequences are
-likely from strongyles!!! We will see in alignemtns how many credible
-sequence variants these four nematode taxa correspond to. 
+likely from strongyles!!! We will see in alignments how many credible
+sequence variants these four nematode taxa correspond to.
 
 
 ## Düppel-project
@@ -122,7 +122,7 @@ In total out of 203 taxa detected in those samples (mostly fungi, some
 plants). Detecting a total of 11392 for 13 Nematode taxa in this is an
 enrichment compared to other fecal samples (see below).
 
-If I remember correclty also some (few, two?) of the "Düppel samples"
+If I remember correctly also some (few, two?) of the "Düppel samples"
 (which IDs?)  were not flotated but crude fecal mater, correct? So we
 could use this in a first analysis of how flotation enriches for the
 PCR products of Nematodes.
@@ -131,7 +131,7 @@ PCR products of Nematodes.
 ## Susana's project
 ### detection of parasites in crude fecal samples of multiple species
 
-Susana Soares' colourful mix of species, allows us to ask a specific
+Susana Soares' colorful mix of species, allows us to ask a specific
 questions related to other projects:
 
 ![Log10 +1 transformed counts for
@@ -139,14 +139,14 @@ nematodes](https://github.com/derele/NamibiaNanopore/blob/main/figures/Susana_1s
 
 Do we see the same in the (one) Zebra as in Grace's Zebra?
 
-Yes, Petrovinema and Cylicocyclus again in Susana's Zebra (SS7Z is a
-Zebra). Also Haemonchus and (new here) Uncinaria in this Zebra.
+Yes, *Petrovinema* and *Cylicocyclus* again in Susana's Zebra (SS7Z is
+a Zebra). Also *Haemonchus* and (new here) *Uncinaria* in this Zebra.
 
 Do we see something resembling the patterns of flotated materials from
 ungulates (the Düppel project) in ungulate flotations of crude feces?
 We see much fewer Nematodes in these samples. Maybe the lack of
-flotation or the different host species? Cooperia and Haemonchus in
-the Ostrich (SS3OS) and Haemonchus in the Giraffe (SS6G) and in SS2Ro
+flotation or the different host species? Cooperia and *Haemonchus* in
+the Ostrich (SS3OS) and *Haemonchus* in the Giraffe (SS6G) and in SS2Ro
 are interesting!?
 
 
@@ -155,7 +155,7 @@ are interesting!?
 
 So far only seqeunces annotated to the genus "Gregarina" are found
 those are database artefacts (or, less likely imo, PCR artefacts). We
-have to investigate some of thes sequences more thoroghly, but for
+have to investigate some of these sequences more thoroughly, but for
 now: we should establish more specific Apicomplexa primers to really
 amplify from blood or ticks.
 
@@ -165,9 +165,9 @@ Regarding the latter, we found many tick related arthropod sequences.
 arthropods](https://github.com/derele/NamibiaNanopore/blob/main/figures/Lilla_Arthro_1st_heat.png)
 
 The species in the hyena feces are credible diet or sampling
-contamination. The other atrhopods are all tick sequences. As this
+contamination. The other arthropods are all tick sequences. As this
 should be from a single species it will be helpful to establish
-alignemnt clustering procedures to derive a consensus sequence (in
+alignment clustering procedures to derive a consensus sequence (in
 this case one).
 
 ## Mouse project
@@ -177,12 +177,12 @@ this case one).
 parasites](https://github.com/derele/NamibiaNanopore/blob/main/figures/Rodents_1st_heat.png)
 
 This figure nicely shows the challenges that still persist: many
-detections seem to be split over different taxon annotations. Closely
+detection seem to be split over different taxon annotations. Closely
 related taxa appear in the same sample, they are likely the same
 species! But non of the species available in the database... this is
-eactly why we need to extract the sequences (based on this reference),
-and then align and cluster them without refernce.
+why we need to extract the sequences (spererately for each match to
+reference), and then align and re-cluster them without reference.
 
-For the project it also shows nicely that we likely have a few
-different Eimeria species.
+For the mouse project this also shows nicely that we likely have a few
+different *Eimeria* species.
 
